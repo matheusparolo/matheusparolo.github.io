@@ -121,9 +121,10 @@
 
       "WEB Services" : {
 
-        "ViaCEP" : 8
+        "ViaCEP" : 8,
+        "OpenWeatherMap" : 6
 
-      }
+      },
 
     }
 
