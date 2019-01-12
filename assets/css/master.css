@@ -1,0 +1,21 @@
+body{
+
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+p{
+    margin: 0;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+@media (min-width: 1200px)
+{
+    #navigations{
+        flex-direction: row-reverse;
+    }
+
+}

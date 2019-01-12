@@ -1,0 +1,133 @@
+[
+
+  {
+
+    "title" : "WEB - Client Side",
+    "cards": {
+
+      "Linguagens" : {
+
+        "HTML5" : 6,
+        "CSS3" : 5,
+        "Javascript" : 4
+
+      },
+      "Frameworks" : {
+
+        "Boostrap 4" : 7,
+        "Mini.css" : 4
+
+      },
+      "Bibliotecas" : {
+
+        "JQuery" : 4
+
+      }
+
+    }
+
+  },
+
+  {
+
+    "title" : "WEB - Server Side",
+    "cards" : {
+
+      "Linguagens" : {
+
+        "PHP" : 6
+
+      },
+      "Frameworks" : {
+
+        "Laravel" : 4,
+        "Slim" : 4
+
+      },
+      "Servidores WEB": {
+
+        "Apache HTTP" : 3
+
+      },
+      "Pré Processadores HTML" : {
+
+        "Pug" : 7,
+        "RainTPL" : 7
+
+      }
+
+    }
+
+  },
+
+  {
+
+    "title" : "Desktop",
+    "cards" : {
+
+      "Linguagens" : {
+
+        "Java 8" : 5,
+        "Python 3" : 5,
+        "Bash" : 3
+
+      },
+      "Frameworks" : {
+
+        "NW.js" : 5
+
+      }
+
+    }
+
+  },
+
+  {
+
+    "title" : "Banco de Dados",
+    "cards" : {
+
+      "SQL" : {
+
+        "MySQL" : 6,
+        "SQLite3" : 6
+
+      }
+
+    }
+
+  },
+
+  {
+
+    "title" : "APIs",
+    "cards" : {
+
+      "APIs" : {
+
+        "Youtube Data (v3)" : 3,
+        "Sped-NFe" : 3
+
+      }
+
+    }
+
+  },
+
+  {
+
+    "title" : "WEB Services",
+    "cards" : {
+
+      "WEB Services" : {
+
+        "ViaCEP" : 8
+
+      }
+
+    }
+
+  }
+
+
+]
