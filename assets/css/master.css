@@ -12,10 +12,12 @@ h1, h2{
     margin: 0;
 }
 
+
 @media (min-width: 1200px)
 {
+
     #navigations{
-        flex-direction: row-reverse;
+	
     }
 
 }
