@@ -225,6 +225,26 @@
 
 }
 
+#skills .view .row
+{
+
+    flex-direction: column;
+
+}
+
+@media (min-width:576px)
+{ 
+
+        #skills .view .row
+        {
+
+            flex-direction: row;
+
+        }
+
+}
+
+
 @media (min-width: 768px) {
 
     #skills-div .card .point
