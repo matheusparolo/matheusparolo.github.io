@@ -1,6 +1,6 @@
-// (function(){
+(function(){
 
-    // "use strict";
+    "use strict";
 
     // Auxiliary
     Object.prototype.removeAllChilds = function(){
@@ -430,6 +430,23 @@
 
         });
 
+        // Action on scroll
+        document.querySelectorAll("#menu a").forEach(element => {
+
+           element.onclick = (e) => {
+
+               e.preventDefault();
+
+               let target = e.target.getAttribute("href");
+               let toScroll = document.querySelector(target).offsetTop;
+
+               window.scroll({ top: toScroll, left: 0, behavior: 'smooth' });
+               document.querySelector("main").scroll({ top: toScroll, left: 0, behavior: 'smooth' })
+
+           }
+
+        });
+
     };
     let loadContents = () => {
 
@@ -453,4 +470,5 @@
 
     main();
 
-// })();
+
+})();

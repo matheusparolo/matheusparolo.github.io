@@ -1,0 +1,27 @@
+{
+  "presets": [
+    [
+      "babel-preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "last 4 versions",
+            "safari >= 7",
+            "not dead",
+            "> 1%"
+          ]
+        },
+        "useBuiltIns": "usage",
+        "debug": false
+      }
+    ]
+  ],
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0"
+  }
+}

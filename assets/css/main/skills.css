@@ -39,6 +39,8 @@
     width: 300px;
     height: 400px;
     cursor: pointer;
+    -webkit-transition: width .25s cubic-bezier(0.4,0.0,0.2,1);
+    -o-transition: width .25s cubic-bezier(0.4,0.0,0.2,1);
     transition: width .25s cubic-bezier(0.4,0.0,0.2,1);
 
 }
@@ -48,6 +50,8 @@
 
     width: 40px;
     margin: 0px 5px;
+    -webkit-transition-duration: .15s;
+    -o-transition-duration: .15s;
     transition-duration: .15s;
     float: right;
 
@@ -62,6 +66,10 @@
 
 #skills-div .side-bar.hide img
 {
+
+    -webkit-transform: rotate(-180deg);
+
+    -ms-transform: rotate(-180deg);
 
     transform: rotate(-180deg);
 
@@ -99,6 +107,8 @@
 {
 
     border-radius: 50%;
+    -webkit-transition-duration: .15s;
+    -o-transition-duration: .15s;
     transition-duration: .15s;
     float: right;
     width: 30px;
@@ -134,12 +144,20 @@
 #skills-div .side-bar .item-collapse > p > img
 {
 
+    -webkit-transform: rotate(0deg);
+
+    -ms-transform: rotate(0deg);
+
     transform: rotate(0deg);
 
 }
 
 #skills-div .side-bar .item-collapse.expanded > p > img
 {
+
+    -webkit-transform: rotate(-180deg);
+
+    -ms-transform: rotate(-180deg);
 
     transform: rotate(-180deg);
 
@@ -184,6 +202,7 @@
 {
 
     padding: 20px;
+    -webkit-box-shadow: 1px 1px 5px 0 rgba(47, 57, 65, .50);
     box-shadow: 1px 1px 5px 0 rgba(47, 57, 65, .50);
     margin: 10px 0;
 
@@ -192,6 +211,7 @@
 #skills-div .card-group
 {
     padding: 37.5px 20px;
+    position: -webkit-sticky;
     position: sticky;
     top: 20px;
 }
@@ -228,19 +248,31 @@
 #skills .view .row
 {
 
+    -webkit-box-orient: vertical;
+
+    -webkit-box-direction: normal;
+
+    -ms-flex-direction: column;
+
     flex-direction: column;
 
 }
 
 @media (min-width:576px)
-{ 
+{
 
-        #skills .view .row
-        {
+    #skills .view .row
+    {
 
-            flex-direction: row;
+        -webkit-box-orient: horizontal;
 
-        }
+        -webkit-box-direction: normal;
+
+        -ms-flex-direction: row;
+
+        flex-direction: row;
+
+    }
 
 }
 

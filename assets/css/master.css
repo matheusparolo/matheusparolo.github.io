@@ -11,13 +11,3 @@ p{
 h1, h2{
     margin: 0;
 }
-
-
-@media (min-width: 1200px)
-{
-
-    #navigations{
-	
-    }
-
-}
