@@ -1,8 +1,12 @@
 [
 
-  {"title" : "Chat", "link" : "https://codepen.io/matheusparolo/full/LMamjm", "img" : "/assets/media/img/codepen/chat.png"},
-  {"title" : "Página de Login com Bootstrap 4", "link" : "https://codepen.io/matheusparolo/full/xmQrVX", "img" : "/assets/media/img/codepen/login page.png"},
-  {"title" : "Página de Usuario com Bootstrap 4", "link" : "https://codepen.io/matheusparolo/full/jXGodN", "img" : "/assets/media/img/codepen/user page.png"},
-  {"title" : "Pontos Saltando", "link" : "https://codepen.io/matheusparolo/full/xmBzxy", "img" : "/assets/media/img/codepen/dots.png"}
+    {"title" : "Parallax",                          "link" : "https://codepen.io/matheusparolo/full/ZwmxdP",   "img" : "/assets/media/img/codepen/slow-background.jpeg"},
+    {"title" : "Chat",                              "link" : "https://codepen.io/matheusparolo/full/LMamjm",   "img" : "/assets/media/img/codepen/chat.png"},
+    {"title" : "Página de Login",                   "link" : "https://codepen.io/matheusparolo/full/yZQrxB",   "img" : "/assets/media/img/codepen/login-page.png"},
+    {"title" : "Página de Usuario",                 "link" : "https://codepen.io/matheusparolo/full/jXGodN",   "img" : "/assets/media/img/codepen/user-page.png"},
+    {"title" : "Pontos Saltando",                   "link" : "https://codepen.io/matheusparolo/full/xmBzxy",   "img" : "/assets/media/img/codepen/jumping-dots.png"},
+    {"title" : "Efeito no icone de menu",           "link" : "https://codepen.io/matheusparolo/full/BMvpJQ",   "img" : "/assets/media/img/codepen/menu-icon.jpeg"},
+    {"title" : "Efeito de Ondulação",               "link" : "https://codepen.io/matheusparolo/full/yZQRoa",   "img" : "/assets/media/img/codepen/ripple-effect.jpeg"},
+    {"title" : "Mostrar/esconder senha",            "link" : "https://codepen.io/matheusparolo/full/MLzRmM",   "img" : "/assets/media/img/codepen/password.jpeg"}
 
 ]
