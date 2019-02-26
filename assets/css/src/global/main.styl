@@ -1,0 +1,75 @@
+$preserve-3d
+  transform-style: preserve-3d
+
+body,
+html
+  overflow: hidden
+
+body
+  font-family: "Source Sans Pro", "Open Sans","helvetica neue", helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility
+
+h1,h2,h3,h4,h5,h6,ul, p
+  margin: 0
+
+ul
+  padding: 0
+
+a
+  text-decoration: none!important
+
+main
+  @extends $preserve-3d
+
+#portfolio
+  overflow-x: hidden
+
+.copy
+  font-size: 16px;
+  background-color: #2a2d34;
+  color: #fff;
+  padding: 20px;
+
+// Parallax
+.parallax
+  height: 100vh
+  overflow-x: hidden
+  overflow-y: auto
+  perspective: 300px
+  perspective-origin: 100%
+  font-size 200%
+
+  &__section
+    position: relative
+    height: 100vh
+    @extends $preserve-3d
+
+  &__dynamic::after
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    transform: translateZ(-300px) scale(2)
+    z-index: -1
+    transform-origin: 100vw
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+
+  &__static
+    background: white
+    z-index: 2
+
+// Images for Effect
+#hero::after
+  background-image: url('/assets/media/img/hero/background.jpeg')
+
+
+@keyframes opacity
+  0%
+    opacity 0
+  100%
+    opacity 100%

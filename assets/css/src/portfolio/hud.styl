@@ -1,0 +1,63 @@
+@require "../global/partial/placeholders"
+
+// Placeholders
+$hud-icons
+  position absolute
+  background-color: rgba(0,0,0,.85);
+  border-radius 50%
+  cursor pointer
+  padding 5px 10px 10px 10px
+  top 10px
+  z-index 2
+  @media(min-width 768px)
+    transform: translateY(-50%)
+    top: 50vh
+
+  img
+    width: 42px
+
+
+// Code
+.hud
+
+  .next
+    @extend $hud-icons
+    right 5px
+    @media(min-width 768px)
+      right 20px
+
+  .return
+    @extend $hud-icons
+    left 5px
+    @media(min-width 768px)
+      left 20px
+
+  #portfolio-types
+    z-index 2
+    background-color: rgba(0,0,0,.85);
+    color white
+    position: absolute;
+    right 0
+    border-radius: 42px 0 0 42px;
+    padding: 10px
+    align-items center
+    cursor: pointer
+    transition-duration .25s
+    bottom: 0
+    transform: translateX(calc(100% - 66px))
+
+    img
+      width: 46px
+      height 46px
+
+    li
+      @extend $line
+      cursor: pointer;
+      padding: 10px 20px;
+      font-size: 22px;
+      @media(min-width 576px)
+        padding: 0 20px;
+        font-size: 18px
+
+    &:hover
+      transform: translateX(0%)

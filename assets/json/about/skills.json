@@ -1,0 +1,155 @@
+[
+
+  {
+
+    "title" : "WEB - Client Side",
+    "cards": {
+
+      "Linguagens" : {
+
+        "HTML5" : 7,
+        "CSS3" : 7,
+        "Javascript" : 7
+
+      },
+      "Frameworks" : {
+
+        "Boostrap 4" : 6,
+        "Mini.css" : 4
+
+      },
+      "Bibliotecas" : {
+
+        "JQuery" : 4
+
+      }
+
+    }
+
+  },
+
+  {
+
+    "title" : "WEB - Server Side",
+    "cards" : {
+
+      "Linguagens" : {
+
+        "PHP" : 6
+
+      },
+      "Frameworks" : {
+
+        "Laravel" : 4,
+        "Slim" : 6
+
+      },
+      "Servidores WEB": {
+
+        "Apache HTTP" : 3
+
+      },
+      "Pré Processadores HTML" : {
+
+        "Pug" : 6,
+        "RainTPL" : 6
+
+      },
+      "Pré Processadores CSS" : {
+
+        "Sass" : 6,
+        "Less" : 4,
+        "Stylus" : 6
+
+      }
+
+    }
+
+  },
+
+  {
+
+    "title" : "Desktop",
+    "cards" : {
+
+      "Linguagens" : {
+
+        "Java 8" : 5,
+        "Python 3" : 5,
+        "Bash" : 3
+
+      },
+      "Frameworks" : {
+
+        "NW.js" : 5
+
+      }
+
+    }
+
+  },
+
+  {
+
+    "title" : "Banco de Dados",
+    "cards" : {
+
+      "SQL" : {
+
+        "MySQL" : 6,
+        "SQLite3" : 6
+
+      }
+
+    }
+
+  },
+
+  {
+
+    "title" : "APIs",
+    "cards" : {
+
+      "APIs" : {
+
+        "Youtube Data (v3)" : 3,
+        "Sped-NFe" : 3
+
+      }
+
+    }
+
+  },
+
+  {
+
+    "title" : "WEB Services",
+    "cards" : {
+
+      "WEB Services" : {
+
+        "ViaCEP" : 8,
+        "OpenWeatherMap" : 6
+
+      }
+
+    }
+
+  },
+
+  {
+
+    "title" : "CMSs",
+    "cards" : {
+
+      "CMSs" : {
+
+        "Wordpress" : 6
+
+      }
+
+    }
+
+  }
+
+]

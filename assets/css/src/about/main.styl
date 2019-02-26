@@ -1,0 +1,63 @@
+@require "partial/placeholders"
+
+$darkgray = #2a2d34
+
+#about
+  text-align center
+  height unset
+  @media(min-width 768px)
+    height 100vh
+    padding 20px
+
+#card
+  background-color: #fff;
+  box-shadow: 3px 3px 10px rgba(0,0,0,.45);
+  color: $darkgray;
+  height 100%
+  padding: 0
+
+  &.show-about
+    padding: 0 15px
+    #about-me
+      @extend $show
+    #skills
+      @extend $hide
+    #historic
+      @extend $hide
+    .to-about
+      @extend $hide
+
+  &.show-skills
+    #about-me
+      @extend $hide
+    #skills
+      @extend $show
+    #historic
+      @extend $hide
+    .to-about
+      position absolute
+      left: 0
+      display: flex
+      align-items center
+
+
+  &.show-historic
+    #about-me
+      @extend $hide
+    #skills
+      @extend $hide
+    #historic
+      @extend $show
+    .to-about
+      width: 100%;
+
+  .to-about
+    background-color: $darkgray;
+    margin: 0
+    cursor: pointer
+    border: 0
+    padding: 10px
+    text-align: left
+
+    img
+      width: 32px;

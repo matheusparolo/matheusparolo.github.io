@@ -1,0 +1,279 @@
+doctype html
+html(lang="pt-BR")
+    head
+        title Matheus P. M.
+
+        // Metas
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+
+        meta(name='geo.region', content='BR-PR')
+        meta(name='geo.position', content='-24.184771;-53.032507')
+        meta(name='ICBM', content='-24.184771, -53.032507')
+
+        meta(name='author', content='Matheus Parolo Miranda')
+        meta(name='description', content='Sou um desenvolvedor web freelancer.')
+
+        // External Links
+        link(rel='stylesheet', href='/assets/css/build/external/bootstrap-grid.min.css')
+        link(rel='stylesheet', href='/assets/css/build/external/bootstrap-reboot.min.css')
+
+        // Internal Links
+        link(rel="stylesheet", href="/assets/css/build/global/main.css")
+
+        link(rel="stylesheet", href="/assets/css/build/hero/menu.css")
+        link(rel="stylesheet", href="/assets/css/build/hero/texts.css")
+
+    body.parallax.container-fluid
+
+        main
+            section.row.parallax__section.parallax__dynamic#hero
+                #hero__menu.col-12
+                    label.hamburger.d-md-none
+                        span.hamburger__line
+                        span.hamburger__line
+                        span.hamburger__line
+
+                    ul.menu.d-md-flex.d-none(type="none")
+                        li.scroll-to-portfolio Portfólio
+                        li.scroll-to-about     Sobre Mim
+                        li.scroll-to-skills    Habilidades
+                        li.scroll-to-historic  Profissional e Acadêmico
+
+                #hero__text.col-12.col-lg-6
+                    h1.name Matheus Parolo
+                    h2.occupation Desenvolvedor Web
+
+            section.row.parallax__section.parallax__static#portfolio.d-flex.d-md-block.align-items-center
+                .hud
+                    .return.d-block.d-md-block.d-lg-block
+                        img(src="/assets/media/img/icons/arrow_left.svg", alt="Retornar Página")
+
+                    .next.d-block.d-md-block.d-lg-block
+                        img(src="/assets/media/img/icons/arrow_right.svg", alt="Próxima Página")
+
+                    #portfolio-types.d-flex
+                        img(src="/assets/media/img/icons/arrow_left.svg", alt="Mostrar tipos de portfólio")
+                        ul(type="none").d-flex.flex-column.flex-sm-row
+                            li(data-id="1") Sites Reais
+                            //li(data-id="2") Sites Exemplares
+                            li(data-id="3") Projetos
+                            li(data-id="4") Fragmentos
+
+                .links--div.d-flex.flex-column
+                    h1.title Portfólio
+                    .portfolio--links.xs.d-md-none
+                    .portfolio--links.md.d-none.d-md-block.d-lg-none
+                    .portfolio--links.lg.d-none.d-lg-block
+
+            section.row.parallax__section.parallax__static#about
+                #card.col-12.show-about.d-flex.flex-column
+                    #about-me
+                        .title.row
+                            h1.col-12 Sobre Mim
+
+                        .body.row.flex-column-reverse
+                            .col-12.col-lg-8
+                                .row.col-12.description
+                                    p Sou um desenvolvedor web freelancer.
+                                    p Formado como Técnico em Informatica, atualmente atuo no planejamento e produção de sites usando técnologias baseadas em HTML, CSS, Javascript, PHP, MySQL.
+                                .row
+                                    .col-12.col-lg-6.contact
+                                        .contact-method.row.col-12.d-flex.align-items-center
+                                            img(src="/assets/media/img/icons/email.svg", alt="Email")
+                                            span matheusparolo.m@gmail.com
+                                        .contact-method.row.col-12.d-flex.align-items-center
+                                            img(src="/assets/media/img/icons/location.svg", alt="Localização")
+                                            span Goioerê - PR
+                                        .contact-method.row.col-12.d-flex.align-items-center
+                                            img(src="/assets/media/img/icons/phone.svg", alt="Telefone")
+                                            span +55 (44) 99998-9176
+
+                                    .col-12.col-lg-6.languages
+                                        .language.portuguese
+                                            span Português
+                                            .d-flex
+                                                .icon
+                                                    img(src="/assets/media/img/icons/edit.svg", alt="escrita")
+                                                .col.score.d-flex
+                                                    .write(aria-label="Escrita") 4
+                                                    .speak(aria-label="Fala") 4
+                                                .icon
+                                                    img(src="/assets/media/img/icons/lips.svg", alt="Fala")
+
+                                        .language.english
+                                            span Inglês
+                                            .d-flex
+                                                .icon
+                                                    img(src="/assets/media/img/icons/edit.svg", alt="escrita")
+                                                .col.score.d-flex
+                                                    .write(aria-label="Escrita") 2
+                                                    .speak(aria-label="Fala") 2
+                                                .icon
+                                                    img(src="/assets/media/img/icons/lips.svg", alt="Fala")
+
+
+                            #profile-pic.col-12.col-lg-4.d-flex.align-items-center
+                                img(src="/assets/media/img/about/profile.jpeg", alt="Foto")
+
+
+                        .row.footer
+                            button#to-skills Habilidades Técnicas
+                            button#to-historic Profissional e Academico
+
+                    #skills.flex-column
+                        button.to-about
+                            img(src='/assets/media/img/icons/arrow_left.svg', alt='Voltar')
+
+                        .row.top-bar.no-gutters
+                            h1.title WEB - Client Side
+                        .row.no-gutters
+                            .side-bar.hide.row.no-gutters
+                                ul.navbar.col(type='none')
+                                    li.item-initial.item-collapse.item
+                                        p(tabindex='0')
+                                            | WEB
+                                            img(src='/assets/media/img/icons/arrow_down.svg', alt='Expandir Categoria')
+                                        ul(type='none')
+                                            li.item.item-final(data-index='0')
+                                                p
+                                                    | Client Side
+                                                    img(src='/assets/media/img/icons/arrow_right.svg', alt='Ver')
+                                            li.item.item-final(data-index='1')
+                                                p
+                                                    | Server Side
+                                                    img(src='/assets/media/img/icons/arrow_right.svg', alt='Ver')
+                                    li.item-initial.item.item-final(data-index='2')
+                                        p
+                                            | Desktop
+                                            img(src='/assets/media/img/icons/arrow_right.svg', alt='Ver')
+                                    li.item-initial.item.item-final(data-index='3')
+                                        p
+                                            | Banco de Dados
+                                            img(src='/assets/media/img/icons/arrow_right.svg', alt='Ver')
+                                    li.item-initial.item.item-final(data-index='4')
+                                        p
+                                            | APIs
+                                            img(src='/assets/media/img/icons/arrow_right.svg', alt='Ver')
+                                    li.item-initial.item.item-final(data-index='5')
+                                        p
+                                            | Web Services
+                                            img(src='/assets/media/img/icons/arrow_right.svg', alt='Ver')
+                                    li.item-initial.item.item-final(data-index='6')
+                                        p
+                                            | CMSs
+                                            img(src='/assets/media/img/icons/arrow_right.svg', alt='Ver')
+                                img#open-side-panel(src='/assets/media/img/icons/arrow_left.svg', alt='Abrir Menu')
+                            #cards
+
+                    #historic
+                        button.to-about.row.col-12
+                            img(src='/assets/media/img/icons/arrow_left.svg', alt='Voltar')
+
+                        .after-button
+                            .row
+                                section#academic-info.a-a-p.col-12.col-md-6
+                                    h1.title Acadêmico
+                                    .infos
+                                        .row.no-gutters
+                                            .timeline
+                                                .circle
+                                            .details
+                                                span IFPR - Campus Goioerê - TI Integrado
+                                                span 2015 - 2018
+                                section#professional-historic.a-a-p.col-12.col-md-6
+                                    h1.title Profissional
+                                    .infos
+                                        .row.no-gutters.y-2018.y-2017-2018
+                                            .timeline
+                                                .circle
+                                                .bar
+                                            .details
+                                                span Arbre Systems - Desenvolvedor WEB
+                                                span 2018
+                                        .row.no-gutters.y-2017
+                                            .timeline
+                                                .circle
+                                            .details
+                                                span SeedSE - Desenvolvedor WEB
+                                                span 2017
+                            .row
+                                section#certifications-info.col-12
+                                    h1.title Certificações
+                                    .infos.items-collapsed
+                                        .row
+                                            a.col-12.col-lg-6(target='_blank', href='https://www.udemy.com/certificate/UC-6C2BQAX9/', rel="noopener noreferrer")
+                                                .download-circle
+                                                    img(src='/assets/media/img/icons/download-circle.svg', alt='Download')
+                                                .details
+                                                    span Desenvolvedor Web Completo - André Fontenelle
+                                                    span 2019
+                                            a.col-12.col-lg-6(target='_blank', href='/assets/media/certifications/hcode-php7.png')
+                                                .download-circle
+                                                    img(src='/assets/media/img/icons/download-circle.svg', alt='Download')
+                                                .details
+                                                    span Curso PHP 7 - HCode
+                                                    span 2018
+                                        .row
+                                            a.col-12.col-lg-6(target='_blank', href='/assets/media/certifications/p5js.pdf')
+                                                .download-circle
+                                                    img(src='/assets/media/img/icons/download-circle.svg', alt='Download')
+                                                .details
+                                                    span HTML 5 Canvas com p5.js - CONECT GOIO
+                                                    span 2017
+                                            a.col-12.col-lg-6(target='_blank', href='/assets/media/certifications/redes-moveis.pdf')
+                                                .download-circle
+                                                    img(src='/assets/media/img/icons/download-circle.svg', alt='Download')
+                                                .details
+                                                    span Mobilidade e Redes Móveis - CONECT GOIO
+                                                    span 2017
+                                        .row
+                                            a.col-12.col-lg-6(target='_blank', href='/assets/media/certifications/programacao-paralela.pdf')
+                                                .download-circle
+                                                    img(src='/assets/media/img/icons/download-circle.svg', alt='Download')
+                                                .details
+                                                    span Ferramentas para programação paralela - CONECT GOIO
+                                                    span 2017
+                                            a.col-12.col-lg-6(target='_blank', href='/assets/media/certifications/aplicativos-moveis.pdf')
+                                                .download-circle
+                                                    img(src='/assets/media/img/icons/download-circle.svg', alt='Download')
+                                                .details
+                                                    span Aplicativos para Dispositivos Móveis - CONECT GOIO
+                                                    span 2017
+                                        .row
+                                            a.col-12.col-lg-6(target='_blank', href='/assets/media/certifications/arduino-iniciante.pdf')
+                                                .download-circle
+                                                    img(src='/assets/media/img/icons/download-circle.svg', alt='Download')
+                                                .details
+                                                    span Arduino Iniciante - CONECT GOIO
+                                                    span 2017
+
+        footer.copy.row
+            .col-12.d-flex.align-items-center.flex-column
+                span Copyright&copy; 2019. Matheus Parolo.
+                span Todos os direitos reservados.
+
+
+        // Links
+        link(rel="stylesheet", href="/assets/css/build/portfolio/hud.css")
+        link(rel="stylesheet", href="/assets/css/build/portfolio/links.css")
+
+        link(rel="stylesheet", href="/assets/css/build/about/main.css")
+        link(rel="stylesheet", href="/assets/css/build/about/about-me.css")
+        link(rel="stylesheet", href="/assets/css/build/about/skills.css")
+        link(rel="stylesheet", href="/assets/css/build/about/historic.css")
+
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700', crossorigin='anonymous')
+        link(rel="icon shortcut", href="/assets/media/img/icons/favicon.png")
+
+        // Scripts
+        script(src="/assets/js/build/external/zepto.min.js")
+        script(src="/assets/js/build/external/smoothscroll.js")
+
+        script(src="/assets/js/build/hero/anchors.js")
+        script(src="/assets/js/build/hero/menu.js")
+
+        script(src="/assets/js/build/portfolio/main.js")
+
+        script(src="/assets/js/build/about/skills.js")
+        script(src="/assets/js/build/about/buttons.js")

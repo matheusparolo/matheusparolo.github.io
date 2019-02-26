@@ -1,0 +1,13 @@
+[
+
+    {"title" : "Parallax",                          "link" : "https://codepen.io/matheusparolo/full/ZwmxdP",   "img" : "/assets/media/img/portfolio/fragments/slow-background.jpeg"},
+    {"title" : "Chat",                              "link" : "https://codepen.io/matheusparolo/full/LMamjm",   "img" : "/assets/media/img/portfolio/fragments/chat.png"},
+    {"title" : "Página de Login",                   "link" : "https://codepen.io/matheusparolo/full/yZQrxB",   "img" : "/assets/media/img/portfolio/fragments/login-page.png"},
+    {"title" : "Página de Usuario",                 "link" : "https://codepen.io/matheusparolo/full/jXGodN",   "img" : "/assets/media/img/portfolio/fragments/user-page.png"},
+    {"title" : "Pontos Saltando",                   "link" : "https://codepen.io/matheusparolo/full/xmBzxy",   "img" : "/assets/media/img/portfolio/fragments/jumping-dots.png"},
+    {"title" : "Efeito no icone de menu",           "link" : "https://codepen.io/matheusparolo/full/BMvpJQ",   "img" : "/assets/media/img/portfolio/fragments/menu-icon.jpeg"},
+    {"title" : "Efeito de Ondulação",               "link" : "https://codepen.io/matheusparolo/full/yZQRoa",   "img" : "/assets/media/img/portfolio/fragments/ripple-effect.jpeg"},
+    {"title" : "Mostrar/esconder senha",            "link" : "https://codepen.io/matheusparolo/full/MLzRmM",   "img" : "/assets/media/img/portfolio/fragments/password.jpeg"},
+    {"title" : "Escrita Emulada",                   "link" : "https://to-lets.matheuspm.repl.co/",             "img" : "/assets/media/img/portfolio/fragments/tolets.png"}
+
+]

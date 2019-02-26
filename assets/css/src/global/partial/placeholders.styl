@@ -1,0 +1,17 @@
+$align-center-y
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+
+
+$line
+  &::after
+    transition-duration: .15s
+    width: 0
+    display: block
+    background-color: #fff
+    height: 1px
+    content: ''
+
+  &:hover::after
+    width: 100%

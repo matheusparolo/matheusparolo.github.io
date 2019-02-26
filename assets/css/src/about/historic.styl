@@ -1,0 +1,92 @@
+@require "partial/placeholders"
+
+$y2018-color = #FF9900
+$y2017-color = #4A86E8
+$completed-color = #79C841
+
+$float-left
+  float: left
+
+#historic
+  .title
+    @extend $title
+
+  .infos
+    padding: 20px 0
+    text-align left
+
+  .after-button
+    @extend $scrollbar
+    padding: 25px
+    height calc(100vh - 52px)
+    overflow auto
+    @media (min-width 768px)
+      height calc(100vh - 92px)
+
+  .details
+    @extend $float-left
+    width: calc(100% - 50px)
+
+    span
+      @extend $float-left
+      padding: 0 20px
+      width: 100%
+      font-size: 18px
+      color: $darkgray
+      text-decoration: none
+
+      &:last-child
+        text-align: left
+
+  .circle::after
+    border-width 6px
+    border-style: solid
+    background-color: white
+    content: ""
+    float: left
+    border-radius: 50%
+    width: 50px
+    height: 50px
+
+  .timeline .bar::after
+    height: 20px
+    margin-left: 22px
+    content: ""
+    float: left
+    width: 5px
+
+  .a-a-p
+    .circle::after
+      border-color: $completed-color
+
+#certifications-info
+  .infos a
+    margin-bottom: 30px
+
+  .download-circle
+    @extend $float-left
+
+  .infos
+    a
+      @extend $float-left
+
+#professional-historic
+
+  .y-2017-2018 .timeline .bar::after
+    background-image: linear-gradient($y2018-color, $y2017-color)!important
+
+  .y-2018 .timeline
+
+    .circle::after
+      border-color: $y2018-color
+
+    .bar::after
+      background-color: $y2018-color
+
+  .y-2017 .timeline
+
+    .circle::after
+      border-color: $y2017-color
+
+    .bar::after
+      background-color: $y2017-color

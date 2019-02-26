@@ -1,0 +1,134 @@
+$darkgray = #2A2D34
+
+// Mixins
+links-info(attr, color)
+  content: attr
+  color: color
+
+flex()
+  flex: arguments;
+  -ms-flex: arguments
+
+// Placeholders
+$links-info
+  position: absolute
+  width: 100%
+  height: 80px;
+
+  text-align center
+  font-size: 22px;
+  transition-duration .15s
+
+  opacity 1
+  bottom:0
+
+  @media(min-width 768px)
+    bottom: unset
+    height: 100%
+    font-size 18px
+    display: grid
+    align-items center
+    opacity 0
+
+
+#portfolio
+  background-color: $darkgray;
+  height unset!important
+  overflow-y: visible;
+  overflow-x: hidden;
+  min-height: 100vh;
+  @media(min-width  768px)
+    overflow hidden
+    height 100vh
+
+// Code
+.links--div
+  color: white
+
+  .title
+    margin: auto 0 0 0
+    text-align: center;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: normal;
+    font-family  "Open Sans","helvetica neue", helvetica, Arial, sans-serif;
+    letter-spacing 2px
+
+    @media(min-width 768px)
+      display: none
+    &::after
+      width 210px
+      margin: 0 auto
+      height: 1px
+      background-color white
+      content: ""
+      display block
+
+
+
+.portfolio--links
+  height 100%
+
+  &.xs
+    padding: 60px 0;
+    margin: 0 0 auto 0
+    @media(min-width 576px)
+      padding: 0;
+    .link
+      height unset
+
+
+  .link
+    position relative
+    width: 100vw
+    height 100vh
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0
+    float: left
+    overflow hidden
+    cursor pointer
+    animation opacity .25s
+    background-color: white
+
+    &::before
+      @extend $links-info
+      links-info("Ver " attr(data-type), rgb(200,200,200))
+      padding-top: 35px
+
+      @media(min-width 768px)
+        padding-top: 30px
+
+      background-color rgba(0,0,0,.85)
+
+    &::after
+      @extend $links-info
+      links-info(attr(data-title), white)
+
+      left: 0
+      padding-top: 10px
+      @media(min-width 768px)
+        padding-top: unset
+        padding-bottom: 30px
+        top: 0
+
+    &:hover::before,
+    &:hover::after
+      opacity 1
+
+    img
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+  &.md
+    .link
+      flex: 0 0 50%;
+      max-width: 50%;
+      height: 50vh
+
+  &.lg
+    .link
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+      height: 50vh

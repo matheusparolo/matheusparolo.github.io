@@ -1,0 +1,182 @@
+@require "partial/placeholders"
+
+$level1 = #ff4343
+$level2 = #f90
+$level3 = #79c841
+$level4 = #4a86e8
+
+
+#skills
+  .main
+    padding: 0
+
+  .top-bar
+    background-color: $darkgray
+    width: 100%
+    height: 52px
+
+  .top-bar .title
+    background-color: $darkgray
+    color: #ffffff
+    font-size: 24px
+    padding: 8px 0
+    text-align: center
+    width: 300px
+
+  .side-bar
+    z-index: 1
+    position: absolute
+    background-color: $darkgray
+    width: 300px
+    cursor: pointer
+    transition: width .25s cubic-bezier(0.4,0.0,0.2,1)
+    height: 80vh
+
+    &.hide
+      width: 50px
+      .navbar
+        @extend $hide
+      img
+        transform: rotate(-180deg)
+
+    > img
+      width: 40px
+      margin: 0 5px
+      transition-duration: .15s
+      float: right
+
+    .navbar
+      text-align left
+      cursor: initial
+      margin: 0
+      padding-left: 20px
+      font-size: 16pt
+
+    .item
+      cursor: pointer
+      color: #fff
+
+      img
+        border-radius: 50%
+        transition-duration: .15s
+        float: right
+        width: 30px
+
+      p
+        margin: 0
+
+    .item-initial
+      color: #fff
+      font-weight: bold
+
+      &:first-child
+        margin-top: 2rem
+
+    .item-collapse
+
+      &.expanded
+        > p > img
+          transform: rotate(-180deg)
+        > ul
+          @extend $show
+
+      ul
+        @extend $hide
+        font-weight: 500
+
+      > p > img
+        transform: rotate(0deg)
+
+
+  /* View */
+  #cards
+    @extend $scrollbar
+    padding-left: 50px
+    width: 100%
+    overflow: auto
+    height: 80vh
+
+    .col
+      padding: 10px 20px 20px
+
+    .row
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
+      flex-direction: column
+      @media (min-width: 992px)
+        -webkit-box-orient: horizontal
+        -webkit-box-direction: normal
+        -ms-flex-direction: row
+        flex-direction: row
+
+
+  /* skills-card */
+  .skills-card
+    padding: 20px
+    box-shadow: 1px 1px 5px 0 rgba(47, 57, 65, .50)
+    margin: 10px 0
+
+    &::after
+      @extend $show
+      font-size 18px
+      position absolute
+      color: #fff
+      padding 5px 20px
+      right: 20px
+      transform: translateY(-77px);
+      border-radius: 25px 0 0 25px;
+      @media(min-width 992px)
+        transform: translateY(-82px);
+
+    &.level-1::after
+      content: "Ruim"
+      background-color $level1
+    &.level-2::after
+      content: "Razoavel"
+      background-color $level2
+    &.level-3::after
+      content: "Bom"
+      background-color $level3
+    &.level-4::after
+      content: "Ótimo"
+      background-color $level4
+
+
+    .title
+      font-size: 18px
+    .score
+      justify-content center
+      padding-top: 15px
+
+    .point
+      margin-right: 2px
+      border-radius: 50%
+      background-color: #EBEBEB
+      width: 15px
+      height: 15px
+      float: left
+      @media (min-width: 992px)
+        width: 20px
+        height: 20px
+      &.full
+        background-color: #0D9FFF
+
+  .skills-card-group
+    padding: 37.5px 20px
+    position: -webkit-sticky
+    position: sticky
+    top: 20px
+
+    &::after
+      display none
+
+
+  .item-collapse ul
+    padding-left: 30px
+
+  .side-bar,
+  #card
+    height: calc(100vh - 52px)
+    @media(min-width: 768px)
+        height: calc(100vh - 92px)

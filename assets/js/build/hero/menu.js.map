@@ -1,0 +1,1 @@
+{"version":3,"sources":["hero/menu.js"],"names":["$","on","toggleClass"],"mappings":"aAAAA,CAAC,CAAC,YAAD,CAAD,CAAgBC,EAAhB,CAAmB,OAAnB,CAA4B,UAAU,CAElCD,CAAC,CAAC,aAAD,CAAD,CAAiBE,WAAjB,CAA6B,QAA7B,CAEH,CAJD,C","sourcesContent":["$(\".hamburger\").on(\"click\", function(){\n\n    $(\"#hero__menu\").toggleClass(\"opened\")\n\n});"],"file":"menu.js"}

@@ -1,0 +1,2 @@
+"use strict";var showSkills=function(){$("#t").removeClass("ts").removeClass("ta").addClass("tl")},showHistoric=function(){$("#t").removeClass("ts").removeClass("tl").addClass("ta")},showAbout=function(){$("#t").removeClass("tl").removeClass("ta").addClass("ts")};$("#to-skills").on("click",showSkills),$("#to-historic").on("click",showHistoric),$(".tu").on("click",showAbout);
+//# sourceMappingURL=buttons.js.map

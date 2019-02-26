@@ -1,0 +1,32 @@
+@require "../global/partial/placeholders"
+
+#hero
+  color white
+  &__text
+    @extend $align-center-y
+    padding: 0
+    text-align center
+
+    @media(min-width: 1200px)
+      text-align right
+
+  .name, .occupation
+    width: 100vw
+    @media(min-width: 1200px)
+      width: unset
+
+  .name
+    font-size 50px
+
+    @media (min-width: 1200px)
+      font-size 60px
+      margin-right: 135px
+
+
+  .occupation
+    font-size 30px
+    font-weight normal
+    transform translateY(-15px)
+
+    @media(min-width 1200px)
+      font-size 36px

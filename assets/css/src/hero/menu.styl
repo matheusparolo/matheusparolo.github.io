@@ -1,0 +1,63 @@
+@require "../global/partial/placeholders"
+
+#hero
+  .menu
+    float: right
+
+    @media (min-width: 992px)
+      margin-right: 20px
+
+  li
+    padding: 20px 25px
+    color: white
+    font-size: 22px
+    cursor: pointer
+    @extend $line
+
+  .hamburger
+    position: absolute
+    right: 0
+    z-index: 3
+    padding: 20px
+    border-radius: 50%
+    cursor: pointer
+
+    &__line
+      display: block
+      width: 40px
+      height 5px
+      background-color white
+      content: ''
+      margin: 5px 0
+      transition-duration: .25s
+
+  &__menu.opened
+    .menu
+      display: block!important
+      margin: 0
+      background-color: rgba(0,0,0,.8)
+      width: 100%
+      position: absolute
+      left: 0
+      padding-top: 80px
+      padding-bottom: 10px
+      z-index: 2
+
+      @media(min-width 768px)
+        display: flex !important
+        position: unset
+        background-color: unset
+        padding: unset
+        left: unset
+        width: unset
+        margin-right: 20px
+
+    .hamburger__line
+      &:nth-child(1)
+        transform: translateY(10px) rotate(45deg)
+
+      &:nth-child(2)
+        opacity 0
+
+      &:nth-child(3)
+        transform: translateY(-10px) rotate(-45deg)
